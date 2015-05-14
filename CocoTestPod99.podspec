@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.author       = { 'Gautam Jain' => 'gautam_jain987@yahoo.com' }
   s.ios.deployment_target = '7.0'
-  s.summary      = 'MoEngage - marketing automation SDK'
   s.source       = { :git => 'https://github.com/gautamjain987/CocoTestPod99.git', :tag => '1.0' }
 
   s.source_files  = 'CocoaLib.h', 'libCocoaLib.a'
