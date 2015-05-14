@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'CocoTestPod99'
   s.version      = '1.0'
-  s.summary      = 'A short description of TestPod. Testing Private CocoaPod'
+  s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right'
 
   s.homepage     = 'https://www.google.com'
   s.license      = { :type => 'BSD', :file => 'LICENSE' }
