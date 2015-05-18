@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = 'CocoTestPod99'
-  s.version      = '1.2'
-  s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. But why is 2.0 not working'
+  s.version      = '1.3'
+  s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. Yes I am :)'
 
   s.homepage     = 'https://www.google.com'
   s.license      = { :type => 'BSD', :file => 'LICENSE' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.source       = { :git => 'https://github.com/gautamjain987/CocoTestPod99.git', :tag => s.version.to_s }
 
-  s.source_files  = 'CocoaLib.h', 'libCocoaLib.a'
+  s.source_files  = 'Headers/*', 'libCocoaLib.a'
   s.frameworks = 'SystemConfiguration'
   s.requires_arc = true
   s.documentation_url = 'http://docs.moengage.com'
