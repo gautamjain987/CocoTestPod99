@@ -14,5 +14,6 @@ Pod::Spec.new do |s|
   s.source_files  = 'CocoaLib.h', 'libCocoaLib.a'
   s.frameworks = 'SystemConfiguration'
   s.requires_arc = true
+  s.documentation_url = 'http://docs.moengage.com'
 
 end
