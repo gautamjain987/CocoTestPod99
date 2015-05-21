@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'CocoTestPod99'
-  s.version      = '1.4'
+  s.version      = '1.5'
   s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. Yes I am :)'
 
   s.homepage     = 'https://www.google.com'
@@ -13,7 +13,10 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'Headers/*'
   s.frameworks = 'SystemConfiguration'
-  s.libraries  = 'CocoaLib'
+
+  s.preserve_paths = 'libCocoaLib.a'
+  s.library = 'CocoaLib'
+
   s.requires_arc = true
   s.documentation_url = 'http://docs.moengage.com'
 
