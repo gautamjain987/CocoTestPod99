@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'CocoTestPod99'
-  s.version      = '1.3'
+  s.version      = '1.4'
   s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. Yes I am :)'
 
   s.homepage     = 'https://www.google.com'
