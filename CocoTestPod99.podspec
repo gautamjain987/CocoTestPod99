@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'CocoTestPod99'
-  s.version      = '1.8'
+  s.version      = '1.9'
   s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. Yes I am :)'
 
   s.homepage     = 'https://www.google.com'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/gautamjain987/CocoTestPod99.git', :tag => s.version.to_s }
 
   s.source_files  = 'Headers/*'
-  s.resource_bundle = 'Hello.bundle'
+  s.resource = 'Hello.bundle'
   s.frameworks = 'SystemConfiguration'
 
   s.preserve_paths = 'libCocoaLib.a'
