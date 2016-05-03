@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "CocoTestPod99"
-  spec.version = "2.5"
+  spec.version = "2.5.1"
   spec.summary = "Sample framework from blog post, not for real world use."
   spec.homepage = "https://github.com/jakecraige/RGB"
   spec.license = { type: 'MIT', file: 'LICENSE' }
