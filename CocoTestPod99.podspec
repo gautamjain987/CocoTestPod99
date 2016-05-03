@@ -1,27 +1,15 @@
-Pod::Spec.new do |s|
+Pod::Spec.new do |spec|
+  spec.name = "CocoTestPod99"
+  spec.version = "2.5"
+  spec.summary = "Sample framework from blog post, not for real world use."
+  spec.homepage = "https://github.com/jakecraige/RGB"
+  spec.license = { type: 'MIT', file: 'LICENSE' }
+  spec.authors = { "Your Name" => 'your-email@example.com' }
+  spec.social_media_url = "http://twitter.com/thoughtbot"
 
-  s.name         = 'CocoTestPod99'
-  s.version      = '2.4.4'
-  s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. Yes I am :)'
-
-  s.homepage     = 'https://www.google.com'
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.platform     = :ios
-  s.author       = { 'Gautam Jain' => 'gautam_jain987@yahoo.com' }
-  s.ios.deployment_target = '8.0'
-  s.source       = { :git => 'https://github.com/gautamjain987/CocoTestPod99.git', :tag => s.version.to_s }
-
-  s.source_files  = 'MoEngageSDK/MoEngageSDK.framework/Inbox/*.m' 
-  s.resource = 'MoEngageSDK/MoEngageSDK.framework/MoEngage.bundle', 'MoEngageSDK/MoEngageSDK.framework/MOInbox/*.{storyboard}'
-  s.frameworks = 'SystemConfiguration', 'CoreLocation' , 'Security'
-
-  s.preserve_paths = 'MoEngageSDK'
-
-  s.public_header_files = 'MoEngageSDK/**/*.h'
-  s.vendored_frameworks = 'MoEngageSDK.framework'
-
-  s.compiler_flags = '-ObjC'
-  s.requires_arc = true
-  s.documentation_url = 'http://docs.moengage.com'
+  spec.platform = :ios, "9.0"
+  spec.requires_arc = true
+  spec.source = { git: "https://github.com/gautamjain987/CocoTestPod99.git", tag: "v#{spec.version}", submodules: true }
+  spec.source_files = "FrameworkTest1/**/*.{h,m}"
 
 end
