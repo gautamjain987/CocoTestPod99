@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'libMoEngageSDK.a'
   s.library = 'libMoEngageSDK'
   s.ios.vendored_library = 'libMoEngageSDK.a'
-
-  s.preserve_paths = 'CocoTestPod99/**'
+  
   s.library = 'MoEngageSDK'
   s.ios.vendored_library = 'libMoEngageSDK.a'
 
