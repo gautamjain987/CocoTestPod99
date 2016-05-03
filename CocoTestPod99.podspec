@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'CocoTestPod99'
-  s.version      = '2.4.3'
+  s.version      = '2.4.4'
   s.summary      = 'This pod is not very helpful. I am checking how to create a private pod and hopefully I am right. Yes I am :)'
 
   s.homepage     = 'https://www.google.com'
@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source       = { :git => 'https://github.com/gautamjain987/CocoTestPod99.git', :tag => s.version.to_s }
 
-  s.source_files  = 'MoEngageSDK.framework/Inbox/*.m' 
-  s.resource = 'MoEngageSDK.framework/MoEngage.bundle', 'MoEngageSDK.framework/MOInbox/*.{storyboard}'
+  s.source_files  = 'MoEngageSDK/MoEngageSDK.framework/Inbox/*.m' 
+  s.resource = 'MoEngageSDK/MoEngageSDK.framework/MoEngage.bundle', 'MoEngageSDK/MoEngageSDK.framework/MOInbox/*.{storyboard}'
   s.frameworks = 'SystemConfiguration', 'CoreLocation' , 'Security'
 
-  s.preserve_paths = 'MoEngageSDK.framework'
+  s.preserve_paths = 'MoEngageSDK'
 
-  s.public_header_files = 'MoEngageSDK.framework/**/*.h'
+  s.public_header_files = 'MoEngageSDK/**/*.h'
   s.vendored_frameworks = 'MoEngageSDK.framework'
 
   s.compiler_flags = '-ObjC'
